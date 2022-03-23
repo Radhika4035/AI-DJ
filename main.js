@@ -21,7 +21,7 @@ function setup ()
     poseNet.on('pose', gotPoses);
 }
 
-function gotPoses()
+function gotPoses(results)
 {
     if(results.length > 0)
     {
