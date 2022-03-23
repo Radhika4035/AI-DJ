@@ -18,7 +18,7 @@ function setup ()
     video.hide();
 
     poseNet = ml5.poseNet(video, modelLoaded);
-    poseNet.om('pose', gotPoses);
+    poseNet.on('pose', gotPoses);
 }
 
 function gotPoses()
